@@ -19,4 +19,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
          name: baummethoden_lr.pickle
-         path: data\models\baummethoden_lr.pickle
+         path: data/models/baummethoden_lr.pickle
