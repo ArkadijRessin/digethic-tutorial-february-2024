@@ -1,7 +1,3 @@
 .venv
 */.ipynb_checkpoints
 .DS_Store
-<<<<<<< HEAD
-# data/models/*
-=======
->>>>>>> 8f8ba938e65198ff2f5020cb325870a2e7b1b912
