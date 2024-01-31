@@ -5,17 +5,17 @@ jobs:
   train-model:
     runs-on: ubuntu-latest
     steps:
-      - names: Checkout Repository
-      - uses: actions/checkout@v3
-      - names: Setup Python and install requirements
-      - uses: actions/setup-python@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+      - name: Setup Python and install requirements
+        uses: actions/setup-python@v3
         with:
          python-version: '3.9'
-      - run: pip install -r requirements.txt
+        run: pip install -r requirements.txt
       - name: Train model
-      - run: python .\src\train.py
+        run: python .\src\train.py
       - name: Upload Train model
-      - uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v4
         with:
          name: baummethoden_lr.pickle
          path: data\models\baummethoden_lr.pickle
