@@ -41,6 +41,6 @@ def predict():
         print(prediction)
         return {"result": prediction[0]}
 
-    return Response ('Please provide all neccessary parameters to get a prediction: zylinder and ps and gewicht and beschleunigung and baujahr',  mimetype="application/json")
+    return Response ('Please provide always all neccessary parameters to get a prediction: zylinder and ps and gewicht and beschleunigung and baujahr',  mimetype="application/json")
 
 # http://127.0.0.1:5000/predict?zylinder=6&ps=133&gewicht=3410&beschleunigung=15.8&baujahr=78
